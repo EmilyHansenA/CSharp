@@ -21,14 +21,18 @@ while (health1 > 0 && health2 > 0)
 
     if (health1 <= 0 && health2 <= 0)
     {
+        Console.ForegroundColor = Console.Red;
         Console.WriteLine("Ничья. Оба воина погибли");
     }
     else if (health1 <= 0)
     {
+        Console.ForegroundColor = Console.Red;
         Console.WriteLine("Воин 1 погиб");
     }
     else if (health2 <= 0)
     {
+        Console.ForegroundColor = Console.Red;
         Console.WriteLine("Воин 2 погиб");
     }
+    Console.ReadKey();
 }
