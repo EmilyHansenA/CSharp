@@ -1,6 +1,6 @@
-class Book
+п»їclass Book
 {
-    //Свойства только для чтения.
+    //РЎРІРѕР№СЃС‚РІР° С‚РѕР»СЊРєРѕ РґР»СЏ С‡С‚РµРЅРёСЏ.
     public string authorLastName { get; }
     public string authorFirstName { get; }
     public string authorMiddleName { get; }
@@ -8,15 +8,15 @@ class Book
     public string bookCode { get; }
     public int bookYear { get; }
 
-    //Свойство для чтения и записи.
+    //РЎРІРѕР№СЃС‚РІРѕ РґР»СЏ С‡С‚РµРЅРёСЏ Рё Р·Р°РїРёСЃРё.
     private int bookPages { get; set; }
 
-    //Коструктор без параметров.
+    //РљРѕСЃС‚СЂСѓРєС‚РѕСЂ Р±РµР· РїР°СЂР°РјРµС‚СЂРѕРІ.
     public Book()
     {
     }
 
-    //Конструктор класса Book с параметрами.
+    //РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєР»Р°СЃСЃР° Book СЃ РїР°СЂР°РјРµС‚СЂР°РјРё.
     public Book(string authorLastName, string authorFirstName, string authorMiddleName, string bookTitle, string bookCode, int bookYear, int bookPages)
     {
         this.authorLastName = authorLastName;
@@ -28,72 +28,72 @@ class Book
         this.bookPages = bookPages;
     }
 
-    //Переопределение стандартного метода ToString() для перевода информации о книге в строковый формат.
+    //РџРµСЂРµРѕРїСЂРµРґРµР»РµРЅРёРµ СЃС‚Р°РЅРґР°СЂС‚РЅРѕРіРѕ РјРµС‚РѕРґР° ToString() РґР»СЏ РїРµСЂРµРІРѕРґР° РёРЅС„РѕСЂРјР°С†РёРё Рѕ РєРЅРёРіРµ РІ СЃС‚СЂРѕРєРѕРІС‹Р№ С„РѕСЂРјР°С‚.
     public override string ToString()
     {
-        return $"Фамилия автора: {authorLastName}\n" +
-               $"Имя автора: {authorFirstName}\n" +
-               $"Отчество автора: {authorMiddleName}\n" +
-               $"Название книги: {bookTitle}\n" +
-               $"Код: {bookCode}\n" +
-               $"Год издания: {bookYear}\n" +
-               $"Количество страниц: {bookPages}";
+        return $"Р¤Р°РјРёР»РёСЏ Р°РІС‚РѕСЂР°: {authorLastName}\n" +
+               $"РРјСЏ Р°РІС‚РѕСЂР°: {authorFirstName}\n" +
+               $"РћС‚С‡РµСЃС‚РІРѕ Р°РІС‚РѕСЂР°: {authorMiddleName}\n" +
+               $"РќР°Р·РІР°РЅРёРµ РєРЅРёРіРё: {bookTitle}\n" +
+               $"РљРѕРґ: {bookCode}\n" +
+               $"Р“РѕРґ РёР·РґР°РЅРёСЏ: {bookYear}\n" +
+               $"РљРѕР»РёС‡РµСЃС‚РІРѕ СЃС‚СЂР°РЅРёС†: {bookPages}";
     }
 
-    //Сравнивание двух книг посредством использования Switch-Case бесконечно, пока пользователь сам не решит, что ему это надоело.
+    //РЎСЂР°РІРЅРёРІР°РЅРёРµ РґРІСѓС… РєРЅРёРі РїРѕСЃСЂРµРґСЃС‚РІРѕРј РёСЃРїРѕР»СЊР·РѕРІР°РЅРёСЏ Switch-Case Р±РµСЃРєРѕРЅРµС‡РЅРѕ, РїРѕРєР° РїРѕР»СЊР·РѕРІР°С‚РµР»СЊ СЃР°Рј РЅРµ СЂРµС€РёС‚, С‡С‚Рѕ РµРјСѓ СЌС‚Рѕ РЅР°РґРѕРµР»Рѕ.
 
     public void CompareAndPrintResult(Book otherBook)
     {
         bool exit = false;
         while (!exit)
         {
-            Console.WriteLine("Выберите критерий сравнения:\n" +
-            "1. lastname — Сравнить книги по фамилиям авторов.\n" +
-            "2. firstname — Сравнить книги по именам авторов.\n" +
-            "3. middlename — Сравнить книги по отчеству авторов.\n" +
-            "4. title — Сравнить книги по названию.\n" +
-            "5. code — Сравнить книги по ID.\n" +
-            "6. year — Сравнить книги по годам издания.\n" +
-            "7. pages — Сравнить книги по количеству страниц.\n" +
-            "8. exit — Выход из сравнивания.\n");
+            Console.WriteLine("Р’С‹Р±РµСЂРёС‚Рµ РєСЂРёС‚РµСЂРёР№ СЃСЂР°РІРЅРµРЅРёСЏ:\n" +
+            "1. lastname вЂ” РЎСЂР°РІРЅРёС‚СЊ РєРЅРёРіРё РїРѕ С„Р°РјРёР»РёСЏРј Р°РІС‚РѕСЂРѕРІ.\n" +
+            "2. firstname вЂ” РЎСЂР°РІРЅРёС‚СЊ РєРЅРёРіРё РїРѕ РёРјРµРЅР°Рј Р°РІС‚РѕСЂРѕРІ.\n" +
+            "3. middlename вЂ” РЎСЂР°РІРЅРёС‚СЊ РєРЅРёРіРё РїРѕ РѕС‚С‡РµСЃС‚РІСѓ Р°РІС‚РѕСЂРѕРІ.\n" +
+            "4. title вЂ” РЎСЂР°РІРЅРёС‚СЊ РєРЅРёРіРё РїРѕ РЅР°Р·РІР°РЅРёСЋ.\n" +
+            "5. code вЂ” РЎСЂР°РІРЅРёС‚СЊ РєРЅРёРіРё РїРѕ ID.\n" +
+            "6. year вЂ” РЎСЂР°РІРЅРёС‚СЊ РєРЅРёРіРё РїРѕ РіРѕРґР°Рј РёР·РґР°РЅРёСЏ.\n" +
+            "7. pages вЂ” РЎСЂР°РІРЅРёС‚СЊ РєРЅРёРіРё РїРѕ РєРѕР»РёС‡РµСЃС‚РІСѓ СЃС‚СЂР°РЅРёС†.\n" +
+            "8. exit вЂ” Р’С‹С…РѕРґ РёР· СЃСЂР°РІРЅРёРІР°РЅРёСЏ.\n");
             string criteria = Console.ReadLine().ToLower();
 
 
             switch (criteria)
             {
                 case "lastname":
-                    Console.WriteLine($"Сравнить книги по фамилиям авторов: {this.authorLastName} и {otherBook.authorLastName}");
-                    Console.WriteLine($"Книги {(this.authorLastName == otherBook.authorLastName ? "имеют одинаковых" : "имеют разных")} по фамилиям авторов\n");
+                    Console.WriteLine($"РЎСЂР°РІРЅРёС‚СЊ РєРЅРёРіРё РїРѕ С„Р°РјРёР»РёСЏРј Р°РІС‚РѕСЂРѕРІ: {this.authorLastName} Рё {otherBook.authorLastName}");
+                    Console.WriteLine($"РљРЅРёРіРё {(this.authorLastName == otherBook.authorLastName ? "РёРјРµСЋС‚ РѕРґРёРЅР°РєРѕРІС‹С…" : "РёРјРµСЋС‚ СЂР°Р·РЅС‹С…")} РїРѕ С„Р°РјРёР»РёСЏРј Р°РІС‚РѕСЂРѕРІ\n");
                     break;
                 case "firstname":
-                    Console.WriteLine($"Сравнить книги по имени авторов: {this.authorFirstName} и {otherBook.authorFirstName}");
-                    Console.WriteLine($"Книги {(this.authorFirstName == otherBook.authorFirstName ? "имеют одинаковых" : "имеют разных")} по именам авторов\n");
+                    Console.WriteLine($"РЎСЂР°РІРЅРёС‚СЊ РєРЅРёРіРё РїРѕ РёРјРµРЅРё Р°РІС‚РѕСЂРѕРІ: {this.authorFirstName} Рё {otherBook.authorFirstName}");
+                    Console.WriteLine($"РљРЅРёРіРё {(this.authorFirstName == otherBook.authorFirstName ? "РёРјРµСЋС‚ РѕРґРёРЅР°РєРѕРІС‹С…" : "РёРјРµСЋС‚ СЂР°Р·РЅС‹С…")} РїРѕ РёРјРµРЅР°Рј Р°РІС‚РѕСЂРѕРІ\n");
                     break;
                 case "middlename":
-                    Console.WriteLine($"Сравнить книги по отчеству авторов: {this.authorMiddleName} и {otherBook.authorMiddleName}");
-                    Console.WriteLine($"Книги {(this.authorMiddleName == otherBook.authorMiddleName ? "имеют одинаковых " : "имеют разных")} по отчеству авторов\n");
+                    Console.WriteLine($"РЎСЂР°РІРЅРёС‚СЊ РєРЅРёРіРё РїРѕ РѕС‚С‡РµСЃС‚РІСѓ Р°РІС‚РѕСЂРѕРІ: {this.authorMiddleName} Рё {otherBook.authorMiddleName}");
+                    Console.WriteLine($"РљРЅРёРіРё {(this.authorMiddleName == otherBook.authorMiddleName ? "РёРјРµСЋС‚ РѕРґРёРЅР°РєРѕРІС‹С… " : "РёРјРµСЋС‚ СЂР°Р·РЅС‹С…")} РїРѕ РѕС‚С‡РµСЃС‚РІСѓ Р°РІС‚РѕСЂРѕРІ\n");
                     break;
                 case "title":
-                    Console.WriteLine($"Сравнить книги по названию: {this.bookTitle} и {otherBook.bookTitle}");
-                    Console.WriteLine($"Книги {(this.bookTitle == otherBook.bookTitle ? "имеют одинаковые" : "имеют разные")} названия\n");
+                    Console.WriteLine($"РЎСЂР°РІРЅРёС‚СЊ РєРЅРёРіРё РїРѕ РЅР°Р·РІР°РЅРёСЋ: {this.bookTitle} Рё {otherBook.bookTitle}");
+                    Console.WriteLine($"РљРЅРёРіРё {(this.bookTitle == otherBook.bookTitle ? "РёРјРµСЋС‚ РѕРґРёРЅР°РєРѕРІС‹Рµ" : "РёРјРµСЋС‚ СЂР°Р·РЅС‹Рµ")} РЅР°Р·РІР°РЅРёСЏ\n");
                     break;
                 case "code":
-                    Console.WriteLine($"Сравнить книги по id: {this.bookCode} и {otherBook.bookCode}");
-                    Console.WriteLine($"Книги {(this.bookCode == otherBook.bookCode ? "имеют одинаковые" : "имеют разные")} id\n");
+                    Console.WriteLine($"РЎСЂР°РІРЅРёС‚СЊ РєРЅРёРіРё РїРѕ id: {this.bookCode} Рё {otherBook.bookCode}");
+                    Console.WriteLine($"РљРЅРёРіРё {(this.bookCode == otherBook.bookCode ? "РёРјРµСЋС‚ РѕРґРёРЅР°РєРѕРІС‹Рµ" : "РёРјРµСЋС‚ СЂР°Р·РЅС‹Рµ")} id\n");
                     break;
                 case "year":
-                    Console.WriteLine($"Сравнить книги по годам издания: {this.bookYear} и {otherBook.bookYear}");
-                    Console.WriteLine($"Книги {(this.bookYear == otherBook.bookYear ? "имеют одинаковый" : "имеют разный")} год издания\n");
+                    Console.WriteLine($"РЎСЂР°РІРЅРёС‚СЊ РєРЅРёРіРё РїРѕ РіРѕРґР°Рј РёР·РґР°РЅРёСЏ: {this.bookYear} Рё {otherBook.bookYear}");
+                    Console.WriteLine($"РљРЅРёРіРё {(this.bookYear == otherBook.bookYear ? "РёРјРµСЋС‚ РѕРґРёРЅР°РєРѕРІС‹Р№" : "РёРјРµСЋС‚ СЂР°Р·РЅС‹Р№")} РіРѕРґ РёР·РґР°РЅРёСЏ\n");
                     break;
                 case "pages":
-                    Console.WriteLine($"Сравнить книги по количеству страниц: {this.bookPages} и {otherBook.bookPages}");
-                    Console.WriteLine($"Книги {(this.bookPages == otherBook.bookPages ? "имеют одинаковое" : "имеют разное")} количество страниц\n");
+                    Console.WriteLine($"РЎСЂР°РІРЅРёС‚СЊ РєРЅРёРіРё РїРѕ РєРѕР»РёС‡РµСЃС‚РІСѓ СЃС‚СЂР°РЅРёС†: {this.bookPages} Рё {otherBook.bookPages}");
+                    Console.WriteLine($"РљРЅРёРіРё {(this.bookPages == otherBook.bookPages ? "РёРјРµСЋС‚ РѕРґРёРЅР°РєРѕРІРѕРµ" : "РёРјРµСЋС‚ СЂР°Р·РЅРѕРµ")} РєРѕР»РёС‡РµСЃС‚РІРѕ СЃС‚СЂР°РЅРёС†\n");
                     break;
                 case "exit":
                     exit = true;
                     break;
                 default:
-                    Console.WriteLine("Неккоректный параметр для сравнения.\n");
+                    Console.WriteLine("РќРµРєРєРѕСЂРµРєС‚РЅС‹Р№ РїР°СЂР°РјРµС‚СЂ РґР»СЏ СЃСЂР°РІРЅРµРЅРёСЏ.\n");
                     break;
 
             }
@@ -105,11 +105,11 @@ class Program
 {
     static void Main(string[] args)
     {
-        //Создаем два экземляра класса Book
-        Book book1 = new Book("Толстой", "Лев", "Николаевич", "Война и мир", "12345", 1869, 1225);
-        Book book2 = new Book("Достоевский", "Федор", "Михайлович", "Преступление и наказание", "12345", 1866, 331);
+        //РЎРѕР·РґР°РµРј РґРІР° СЌРєР·РµРјР»СЏСЂР° РєР»Р°СЃСЃР° Book
+        Book book1 = new Book("РўРѕР»СЃС‚РѕР№", "Р›РµРІ", "РќРёРєРѕР»Р°РµРІРёС‡", "Р’РѕР№РЅР° Рё РјРёСЂ", "12345", 1869, 1225);
+        Book book2 = new Book("Р”РѕСЃС‚РѕРµРІСЃРєРёР№", "Р¤РµРґРѕСЂ", "РњРёС…Р°Р№Р»РѕРІРёС‡", "РџСЂРµСЃС‚СѓРїР»РµРЅРёРµ Рё РЅР°РєР°Р·Р°РЅРёРµ", "12345", 1866, 331);
 
-        // Вызов метода сравнения и вывода результата
+        // Р’С‹Р·РѕРІ РјРµС‚РѕРґР° СЃСЂР°РІРЅРµРЅРёСЏ Рё РІС‹РІРѕРґР° СЂРµР·СѓР»СЊС‚Р°С‚Р°
         book1.CompareAndPrintResult(book2);
     }
 }
