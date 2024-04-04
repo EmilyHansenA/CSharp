@@ -17,7 +17,7 @@ class Programmer : IWorker
 //Создаем класс Manager, который наследует интерфейс IWorker
 class Manager : IWorker
 {
-    public int TeamSize;
+    public int teamSize;
     public void DoWork()
     {
         throw new NotImplementedException();
