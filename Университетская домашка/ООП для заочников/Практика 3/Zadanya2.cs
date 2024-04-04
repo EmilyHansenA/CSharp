@@ -1,4 +1,4 @@
-﻿//Создаем интерфейс IWorker
+﻿//Создаем интерфейс IWorker и метод DoWork
 interface IWorker
 {
     void DoWork();
@@ -8,9 +8,10 @@ interface IWorker
 class Programmer : IWorker
 {
     public string programmingLanguage;
+    //Реализовали метод интерфейса
     public void DoWork()
     {
-        throw new NotImplementedException();
+        Console.WriteLine("Programmer do work");
     }
 }
 
@@ -18,8 +19,22 @@ class Programmer : IWorker
 class Manager : IWorker
 {
     public int teamSize;
+    //Реализовали метод интерфейса
     public void DoWork()
     {
-        throw new NotImplementedException();
+        Console.WriteLine("Manager do work");
+    }
+}
+
+//Основное тело программы
+class Program
+{
+    static void Main(string[] args)
+    {
+        //Создаем экземляр классов Programmer & Manager и вызываем их методы
+        Programmer programmer = new Programmer();
+        programmer.DoWork();
+        Manager manager = new Manager();
+        manager.DoWork();
     }
 }
