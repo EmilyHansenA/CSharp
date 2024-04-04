@@ -8,12 +8,12 @@ interface IWorker
 class Programmer : IWorker
 {
     public string programmingLanguage;
-
     public void DoWork()
     {
         throw new NotImplementedException();
     }
 }
+
 //Создаем класс Manager, который наследует интерфейс IWorker
 class Manager : IWorker
 {
