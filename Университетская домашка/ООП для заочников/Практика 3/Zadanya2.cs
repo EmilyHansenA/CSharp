@@ -1,9 +1,11 @@
-﻿interface Iworker
+﻿//Создаем интерфейс IWorker
+interface IWorker
 {
-    public void DoWork();
+    void DoWork();
 }
 
-class Programmer : Iworker
+//Создаем класс Programmer, который наследует интерфейс IWorker
+class Programmer : IWorker
 {
     public string programmingLanguage;
 
@@ -12,8 +14,8 @@ class Programmer : Iworker
         throw new NotImplementedException();
     }
 }
-
-class Manager : Iworker
+//Создаем класс Manager, который наследует интерфейс IWorker
+class Manager : IWorker
 {
     public int TeamSize;
     public void DoWork()
