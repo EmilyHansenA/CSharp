@@ -1,0 +1,60 @@
+# Игнорировать файлы сборки и объектные файлы
+[Bb]in/
+[Oo]bj/
+
+# Игнорировать файлы пользовательских настроек
+*.user
+*.suo
+*.userprefs
+
+# Игнорировать файлы кэша
+*.cache
+
+# Игнорировать результаты работы
+*.exe
+*.dll
+*.pdb
+*.xml
+
+# Игнорировать файлы пакетов NuGet
+[Nn]u[Gg]et/
+*.nupkg
+packages/
+
+# Игнорировать файлы резервных копий
+*.bak
+
+# Игнорировать файлы журналов и диагностики
+*.log
+*.vs/
+
+# Игнорировать файлы специфичные для Visual Studio
+.vs/
+*.sln.iml
+
+# Игнорировать файлы, созданные ReSharper
+_ReSharper.*
+*.ReSharper
+
+# Игнорировать файлы, созданные Rider
+.idea/
+*.iml
+
+# Игнорировать файлы, созданные dotnet
+/.dotnet/
+/.local/
+/.nuget/
+/.sonarqube/
+/.tools/
+/.vscode/
+artifacts/
+
+# Игнорировать файлы, созданные тестами
+TestResults/
+
+# Игнорировать файлы, созданные Azure
+*.azurePubxml
+
+# Игнорировать файлы, созданные Docker
+docker-compose.yml
+docker-compose.override.yml
