@@ -1,0 +1,12 @@
+D:\Github\LeafFallInputDriven\bin\Release\net48\LeafFallInputDriven.exe.config
+D:\Github\LeafFallInputDriven\bin\Release\net48\LeafFallInputDriven.exe
+D:\Github\LeafFallInputDriven\bin\Release\net48\LeafFallInputDriven.pdb
+D:\Github\LeafFallInputDriven\obj\Release\net48\LeafFallInputDriven.csproj.AssemblyReference.cache
+D:\Github\LeafFallInputDriven\obj\Release\net48\LeafFallInputDriven.Form1.resources
+D:\Github\LeafFallInputDriven\obj\Release\net48\LeafFallInputDriven.csproj.GenerateResource.cache
+D:\Github\LeafFallInputDriven\obj\Release\net48\LeafFallInputDriven.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\LeafFallInputDriven\obj\Release\net48\LeafFallInputDriven.AssemblyInfoInputs.cache
+D:\Github\LeafFallInputDriven\obj\Release\net48\LeafFallInputDriven.AssemblyInfo.cs
+D:\Github\LeafFallInputDriven\obj\Release\net48\LeafFallInputDriven.csproj.CoreCompileInputs.cache
+D:\Github\LeafFallInputDriven\obj\Release\net48\LeafFallInputDriven.exe
+D:\Github\LeafFallInputDriven\obj\Release\net48\LeafFallInputDriven.pdb

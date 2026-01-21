@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>LeafFallInputDriven</id>
+    <version>1.0.0</version>
+    <authors>LeafFallInputDriven</authors>
+    <description>Package Description</description>
+    <repository type="git" />
+    <dependencies>
+      <group targetFramework=".NETFramework4.8" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="D:\Github\LeafFallInputDriven\bin\Debug\net48\LeafFallInputDriven.exe" target="lib\net48\LeafFallInputDriven.exe" />
+  </files>
+</package>
